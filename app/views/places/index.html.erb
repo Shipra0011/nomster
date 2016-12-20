@@ -5,7 +5,7 @@
     <p><%= place.description %></p><br />
 
     <% if place.photos.present? %>
-      <%= image_tag place.photos.last.Picture, class: "img-responsive" %>
+      <%= image_tag place.photos.last.picture, class: "img-responsive" %>
     <% end %>
 
     <% if place.user.present? %>

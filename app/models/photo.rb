@@ -1,6 +1,6 @@
 class Photo < ActiveRecord::Base
-  belongs_to :user
   belongs_to :place
-
-  mount_uploader :Picture, PictureUploader
+  belongs_to :user
+  has_many :photos
+  mount_uploader :picture, PictureUploader
 end
